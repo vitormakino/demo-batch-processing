@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo-batch-processing
+  sql:
+    init:
+      mode: always
+  batch:
+    initialize-schema: always
+
+app:
+  directory:
+    input: target/entrada
+    success: target/processados
+    errors: target/erros
